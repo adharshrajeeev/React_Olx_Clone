@@ -1,0 +1,202 @@
+.headerParentDiv {
+  padding: 10px;
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  overflow-x: hidden;
+}
+
+.headerChildDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeSearch {
+  width: 16em;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.placeSearch ::selection {
+  border-color: #23e5db;
+  outline-color: #23e5db;
+}
+
+.placeSearch input {
+  border-color: transparent;
+  outline-color: transparent;
+}
+
+.productSearch {
+  width: 35em;
+  height: 48px;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productSearch .input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.productSearch .input input {
+  border-color: transparent;
+  outline-color: transparent;
+  width: 100%;
+  align-items: center;
+}
+
+.productSearch .searchAction {
+  min-width: 48px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  background-color: #002f34;
+  border-radius: 0 4px 4px 0;
+}
+
+.productSearch .searchAction svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+}
+
+.language {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.language span {
+ 
+  font-size: 15px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+
+.span {
+  text-decoration: none;
+  font-size: 16px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.loginPage hr {
+  margin: 0;
+  background-color: black;
+  height: 2px;
+}
+
+.loginPage a{
+  text-decoration: none;
+}
+
+.sellMenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.sellMenu .all {
+  fill: white;
+}
+
+.sellMenu .top {
+  fill: #23e5db;
+}
+
+.sellMenu .left {
+  fill: #ffce32;
+}
+
+.sellMenu .right {
+  fill: #3a77ff;
+}
+.sellMenu .sellMenuContent {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #002f34;
+}
+
+/* .sellMenu .sellMenuContent svg {
+  align-items: center;
+} */
+.sellMenu .sellMenuContent span {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .placeSearch,
+  .productSearch,
+  .sellMenu {
+    display: none;
+  }
+}
+
+
+
+
+/* CSS */
+.button-24 {
+  background: #634ebe;
+  border: 1px solid #080808;
+  border-radius: 6px;
+  box-shadow: rgb(255, 255, 255) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 30px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #000000;
+}
+
+.button-24:active {
+  opacity: .5;
+}
